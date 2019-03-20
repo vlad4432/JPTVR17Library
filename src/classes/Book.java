@@ -20,7 +20,6 @@ public class Book {
    private int pages;
    
    public Book(){
-       
    }
 
     public Book(String title, String text, Author[] authors, int year, int pages) {
@@ -30,7 +29,11 @@ public class Book {
         this.year = year;
         this.pages = pages;
     }
-
+    public int wordsInText(){
+        //тело метода
+        
+        return 0;
+    }
 
     @Override
     public int hashCode() {
