@@ -31,8 +31,11 @@ public class Book {
     }
     public int wordsInText(){
         //тело метода
-        
-        return 0;
+        while(this.text.indexOf("  ") > 0){
+            this.text=this.text.replaceAll("  ", " ");
+        }
+        String[] myTextWords = this.text.split(" ");
+        return myTextWords.length;
     }
 
     @Override
@@ -122,8 +125,9 @@ public class Book {
                 + ", текст книги=\"" + text 
                 + "\",\n авторы книги =" + Arrays.toString(authors) 
                 + ",\n год издания=" + year 
-                + ", количествро страниц: " + pages 
-                ;
+                + ", количество страниц: " + pages 
+                + ", количество слов: " + this.wordsInText();
+                
     }
    
 }
