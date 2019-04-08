@@ -10,6 +10,11 @@ package classes;
  * @author Melnikov
  */
 public class AuthorCreator {
+
+    private Scanner scanner = new Scanner(System.in);
+    public Autor[] create(){
+    System.out.printIn("Сколько авторов создать?...")
+    } 
     public Author[] create(){
         Author tolstoy = new Author();
         tolstoy.setName("Лев");
